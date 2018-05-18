@@ -46,6 +46,9 @@ FireWheel *will* find emaill addresses that use any alphanumeric character as we
 
 It *will not* find (and anonymize) email addresses that contain any other characters. It *wil* change `%40` to `@`. It *will not* convert any urlencoded text other than `%40`.
 
+## Minimum Fire
+Also  included is a stripped down version of fire that uses only Python3 basic modules (no fancy progress bar and timestamp). It is called `fw.py`.
+
 ## License
 Copyright (c) 2018 Adam Z. Wasserman, Neil Schwartzman
 
