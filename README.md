@@ -29,9 +29,10 @@ Any email using the following [RFC 5322](https://tools.ietf.org/html/rfc5322) le
 - email addresses that contain the following characters, which are more commonly found in URLs as delimiters than in email addresses: `& ; / " < > ? $ =`. Please see table below that illustrates collisions between possible (legal) email address characters and possible URL delimiters (both official, and non-offical, but commonly used).
 
 ## table test
-|col1|col2|
-|---|---|
-|data 1| data 2|
+|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|
+|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|
 
 ## Conflicts between emaill addresses and URLs
 |A-Z|a-z|0-9|-|=|!|@|#|$|%|^|&|*|(|)|_|+|`|;|'|,|.|/|{|}|:|"|<|>|?|\|
