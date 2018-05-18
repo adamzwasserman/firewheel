@@ -6,6 +6,8 @@ FIRE! Are you worried about being sued for Billions of €uros under GDPR? Ya go
 
 WHEEL is vapourware. Now that we've cleared that up, this what it is gonna do: WHEEL will run over stuff like civic addresses and birthdays, leaving a clean conscience in its wake.
 
+Designed by Spamfighter, Coded by Adam.
+
 ## Fire Features
 - FIRE is gentle. It doesn't change the structure or content of a file other than redacting email addresses
 - FIRE is robust. It has been tested extensively against massive datasets.
