@@ -1,17 +1,21 @@
 # FireWheel
 
-Post GDPR-mageddon; bringing light and transportation to the previously sould destroying work of attempting to anonymiz email addresses at scale, as found in log files containing emails alongside URLs, and other unstructured text.
+We live in a Post GDPR-mageddon; Fire and Wheel bring light and rainbows to the previously soul-crushing work of redacting Personal Identifiable Information (PII) commonly found in log files, and other unstructured text. Yeah. I'm looking at YOU, Splunk. To whit, we have invented Fire, and The Wheel.
 
-## Features
-- Does not change the structure or content of the file other than redacting email addresses
-- Robust: has been extensively tested against a very large dataset (7.5 Million lines of live logs)
-- Smart enough to ignore image files (png and jpg) with a naming convention that resembles an email `e.g. imagefile@2x.png`
+FIRE! Are you worried about being sued for Billions of €uros under GDPR? Ya got email addresses in a logfile? We feel ya. Who doesn't? Kill 'em with FIRE.
+
+WHEEL is vapourware. Now that we've cleared that up, this what it is gonna do: WHEEL will run over stuff like civic addresses and birthdays, leaving a clean conscience in its wake.
+
+## Fire Features
+- FIRE is gentle. It doesn't change the structure or content of a file other than redacting email addresses
+- FIRE is robust. It has been tested extensively against massive datasets.
+- FIRE is smart. It is clever enough to ignore image files (png and jpg) with a naming convention that resembles an email `e.g. imagefile@2x.png`
 
 
 ## Requirements
-You must have Python 3.6 or higher.
+You must have Python 3.6 or higher. If not, you do not get into the club.
 
-You will need the following MIT license 3rd party python modules:
+You will need the following (MIT licensed) 3rd party python modules:
  - The excellent `arrow` for better time handling than the built-in python modules
  - The equally excellent `tqdm` for totally awesome progress bars
 
@@ -29,10 +33,11 @@ Any email using the following [RFC 5322](https://tools.ietf.org/html/rfc5322) le
 - email addresses that contain the following characters, which are more commonly found in URLs as delimiters than in email addresses: `& ; / " < > ? $ =`. Please see table below that illustrates collisions between possible (legal) email address characters and possible URL delimiters (both official, and non-offical, but commonly used).
 
 ## Conflicts between emaill addresses and URLs
-||A-Z|a-z|0-9|-|=|!|@|#|$|%|^|&|*|(|)|_|+|`|;|'|,|.|/|{|}|:|"|<|>|?|\|
+||A-Z|a-z|0-9|-|=|!|@|#|$|%|^|&|*|(|)|_|+|`|;|'|,|.|/|{|}|:|"|<|>|?|\||
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
-|legal in email addresses|x|x|x|x|x|x||x|x|x|x|x|x|||x|x|x|x|x||x|x|x|x|||||x|x|legal in URL without encoding|x|x|x|x|x|x|||x||||x|x|x|x|x|||x|x|x||||||||
-|used as delimiter in email (reserved)|||||||x|||||||x|x||||||||||||x|x|x|
+|legal in email addresses|x|x|x|x|x|x||x|x|x|x|x|x|||x|x|x|x|x||x|x|x|x|||||x|x|
+|legal in URL without encoding|x|x|x|x|x|x|||x||||x|x|x|x|x|||x|x|x|||||||||
+|used as delimiter in email (reserved)|||||||x|||||||x|x||||||||||||x|x|x||
 |used as delimiters in URLs (reserved)|||||||x|||||x|||||||x||||x|||x|x|x|x|x|
 |**conflict when parsing for email addresses**|||||**x**||**x**|||||**x**|||||||**x**||||**x**||||**x**|**x**|**x**|**x**|
 
@@ -41,7 +46,7 @@ FireWheel *will* find emaill addresses that use any alphanumeric character as we
 
 It *will not* find (and anonymize) email addresses that contain any other characters. It *wil* change `%40` to `@`. It *will not* convert any urlencoded text other than `%40`.
 
-## License (MIT)
+## License
 Copyright (c) 2018 Adam Z. Wasserman, Neil Schwartzman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
