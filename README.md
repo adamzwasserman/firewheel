@@ -29,7 +29,7 @@ Any email using the following [RFC 5322](https://tools.ietf.org/html/rfc5322) le
 - email addresses that contain the following characters, which are more commonly found in URLs as delimiters than in email addresses: `& ; / " < > ? $ =`. Please see table below that illustrates collisions between possible (legal) email address characters and possible URL delimiters (both official, and non-offical, but commonly used).
 
 ## Conflicts between emaill addresses and URLs
-||A-Z|a-z|0-9|-|=|!|@|#|$|%|^|&|*|(|)|_|+|`|;|'|,|.|/|{|}|:|"|<|>|?|\||
+|A-Z|a-z|0-9|-|=|!|@|#|$|%|^|&|*|(|)|_|+|`|;|'|,|.|/|{|}|:|"|<|>|?|\||
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
 |legal in email addresses|x|x|x|x|x|x||x|x|x|x|x|x|||x|x|x|x|x||x|x|x|x|||||x|x|
 |legal in URL without encoding|x|x|x|x|x|x|||x||||x|x|x|x|x|||x|x|x|||||||||
@@ -42,7 +42,7 @@ FireWheel *will* find emaill addresses that use any alphanumeric character as we
 
 It *will not* find (and anonymize) email addresses that contain any other characters. It *wil* change `%40` to `@`. It *will not* convert any urlencoded text other than `%40`.
 
-## License
+## License (MIT)
 Copyright (c) 2018 Adam Z. Wasserman, Neil Schwartzman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
