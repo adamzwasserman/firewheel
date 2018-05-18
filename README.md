@@ -30,7 +30,7 @@ Any email using the following [RFC 5322](https://tools.ietf.org/html/rfc5322) le
 
 ## Conflicts between emaill addresses and URLs
 |A-Z|a-z|0-9|-|=|!|@|#|$|%|^|&|*|(|)|_|+|`|;|'|,|.|/|{|}|:|"|<|>|?|\||
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |legal in email addresses|x|x|x|x|x|x||x|x|x|x|x|x|||x|x|x|x|x||x|x|x|x|||||x|x|
 |legal in URL without encoding|x|x|x|x|x|x|||x||||x|x|x|x|x|||x|x|x|||||||||
 |used as delimiter in email (reserved)|||||||x|||||||x|x||||||||||||x|x|x||
